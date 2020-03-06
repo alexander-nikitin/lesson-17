@@ -1,0 +1,23 @@
+*, *::before, *::after 
+  box-sizing: border-box
+  outline: none
+body
+  font-family: 'Futura Book', sans-serif
+  font-size: 14px
+h1, h2, p 
+  margin: 0
+.section
+  &-title
+    text-align: center
+    text-transform: uppercase
+    font-family: 'Yeseva One', cursive
+    &__image
+      display: flex
+      justify-content: center
+      align-items: center
+      &::after, &::before
+        content: ''
+        width: 23px
+        height: 2px
+        margin: 0 10px
+        background-color: $primary
